@@ -1,1 +1,1 @@
-export { default as useGeolocation } from './web-api-hooks/use-geo-location'
+export { default as useGeolocation } from './hooks/use-geo-location'
