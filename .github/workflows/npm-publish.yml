@@ -26,7 +26,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm install -g yarn@3
+      - run: corepack enable
+      - run: corepack prepare yarn@3 --activate
       - uses: actions/cache@v2
         with:
           path: |
