@@ -7,18 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: yarn install --frozen-lockfile
-      - run: yarn build
-
   publish-npm:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -27,7 +16,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: corepack enable
-      - run: corepack prepare yarn@3 --activate
+      - run: corepack prepare berry --activate
       - uses: actions/cache@v2
         with:
           path: |
