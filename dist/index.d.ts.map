@@ -1,1 +1,1 @@
-{"mappings":"AAyBA,kCAA2B,mBAAmB,GAAG,IAAI,CAKpD","sources":["src/src/web-api-hooks/use-geo-location.ts","src/src/index.ts","src/index.ts"],"sourcesContent":[null,null,"export { default as useGeolocation } from './web-api-hooks/use-geo-location'"],"names":[],"version":3,"file":"index.d.ts.map"}
+{"mappings":"AAyBA,kCAA2B,mBAAmB,GAAG,IAAI,CAKpD","sources":["src/src/hooks/use-geo-location.ts","src/src/index.ts","src/index.ts"],"sourcesContent":[null,null,"export { default as useGeolocation } from './hooks/use-geo-location'"],"names":[],"version":3,"file":"index.d.ts.map"}
