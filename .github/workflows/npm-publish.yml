@@ -16,7 +16,7 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: corepack enable
-      - run: corepack prepare berry --activate
+      - run: corepack prepare yarn@4 --activate
       - uses: actions/cache@v2
         with:
           path: |
